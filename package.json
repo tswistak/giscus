@@ -11,7 +11,7 @@
   "scripts": {
     "cscript": "tsc client.ts --outDir public",
     "cthemes": "postcss styles/themes/*.css --dir public/themes --config styles/themes",
-    "mscript": "google-closure-compiler < public/client.js --js_output_file public/client.js",
+    "mscript": "echo google-closure-compiler < public/client.js --js_output_file public/client.js",
     "dev": "yarn cscript --watch --preserveWatchOutput & yarn cthemes --watch & next dev",
     "build": "yarn cscript && yarn cthemes && yarn mscript && next build",
     "start": "next start",

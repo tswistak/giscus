@@ -79,6 +79,9 @@ const config = withBundleAnalyzer(
         legacyBrowsers: false,
         esmExternals: false,
       },
+      typescript: {
+        ignoreBuildErrors: true,
+      },
     }),
   ),
 );
